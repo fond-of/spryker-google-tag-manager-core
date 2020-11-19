@@ -90,12 +90,7 @@ class GoogleTagManagerCoreTwigExtension extends AbstractTwigExtensionPlugin
      */
     public function renderDataLayer(Environment $twig, string $page, array $params): string
     {
-        ,
-        {
-            "name": "fond-of-spryker/google-tag-manager-default-variables",
-      "type": "path",
-      "url": "local_repositories/fond-of-spryker/spryker-google-tag-manager-default-variables"
-    }        if (!$this->getConfig()->isEnabled() || !$this->getConfig()->getContainerID()) {
+        if (!$this->getConfig()->isEnabled() || !$this->getConfig()->getContainerID()) {
             return '';
         }
 
